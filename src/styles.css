@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-heading: ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --palette-primary: #1A60D0;
+  --palette-secondary: #0A40A0;
+  --palette-accent: #5090E8;
+  --palette-surface: #ECF2FD;
+  --palette-text: #08102A;
+  --palette-text-muted: #385080;
+  --palette-background: #F4F7FE;
+  --palette-card: #FFFFFF;
+  --palette-border: rgba(26, 96, 208, 0.2);
+  --palette-glow: rgba(26, 96, 208, 0.15);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--palette-background);
+  color: var(--palette-text);
+  transition: background-color 0.8s ease, color 0.8s ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+}
+
+::selection {
+  background: var(--palette-glow);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--palette-text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--palette-primary);
+}
