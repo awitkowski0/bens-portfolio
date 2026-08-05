@@ -1,56 +1,129 @@
+export interface ProjectImage {
+  src: string
+  alt: string
+  caption?: string
+}
+
+export interface ProjectVideo {
+  src: string
+  poster?: string
+  label?: string
+}
+
+export interface ProjectLink {
+  label: string
+  url: string
+}
+
+export type ProjectCategory = 'Music' | 'Marketing Experience' | 'Music Festival Experiences'
+
 export interface Project {
   name: string
+  category: ProjectCategory
+  role?: string
   description: string
-  tech: string[]
-  liveUrl?: string
-  githubUrl?: string
+  tags: string[]
   highlights?: string[]
+  images?: ProjectImage[]
+  video?: ProjectVideo
+  links?: ProjectLink[]
 }
+
+export const projectCategories: ProjectCategory[] = ['Music', 'Marketing Experience', 'Music Festival Experiences']
 
 export const projects: Project[] = [
   {
-    name: 'Frody.co',
+    name: 'MEBA — Music & Entertainment Business Association',
+    category: 'Music',
+    role: 'Founder',
     description:
-      'Architected a distributed, real-time fraud detection system leveraging a streaming data pipeline (Kafka) and large-scale data processing (BigQuery).',
-    tech: ['Kafka', 'BigQuery', 'Python', 'GCP'],
+      'Founded and scaled a Pitt Business student organization from the ground up, bridging students with the music and entertainment industry through guest speakers, corporate partnerships, and benefit concerts — including a Farina Foundation benefit show with Post Genre.',
+    tags: ['Leadership', 'Business Development', 'Partnerships', 'Community Outreach'],
     highlights: [
-      "Best Distributed Systems Hack' at PennApps 2024",
-      "'Most Technically Complex' at PennApps 2024",
+      '9 general body meetings with guest speakers from Stage AE, Audacy, and Warner Records',
+      '134 Instagram followers, 65 GroupMe members, 84 email subscribers in first semester',
+      'Booked a Farina Foundation benefit concert with Post Genre',
+    ],
+    images: [
+      { src: '/images/case-studies/meba-general-body-meeting.jpg', alt: 'MEBA general body meeting at Pitt Business', caption: 'A MEBA general body meeting' },
+      { src: '/images/case-studies/audacy-studio-visit.jpg', alt: 'MEBA members visiting Audacy’s Pittsburgh studios', caption: 'MEBA members touring Audacy’s Pittsburgh studios' },
+    ],
+    links: [
+      { label: 'Pitt News Feature', url: 'https://pittnews.com/article/186193/featured/passion-meets-profession-club-helps-students-start-music-entertainment-business-careers/' },
+      { label: 'MEBA on Instagram', url: 'https://www.instagram.com/meba.pitt/' },
+      { label: 'Farina Foundation Benefit Concert', url: 'https://farinafoundation.org/event/mebe-presents-play-it-forward-a-farina-foundation-benefit-concert/' },
     ],
   },
   {
-    name: "PLAY'r",
+    name: 'Core Capital Lending',
+    category: 'Marketing Experience',
+    role: 'Marketing Strategist',
     description:
-      'Prototyping an application that leverages a large language model (Google Gemini API) for dynamic content generation, exploring the practical integration of foundation models into user-facing games.',
-    tech: ['TypeScript', 'Google Gemini', 'Vite', 'PartyKit'],
-    githubUrl: 'https://github.com/awitkowski0/playr-web',
+      'Owned multi-channel marketing for a Pittsburgh-based real estate lender — from digital ad campaigns and investor newsletters to a highway digital billboard on I-79 — driving inbound leads and expanding the borrower network.',
+    tags: ['Meta Ads', 'Google Ads', 'Billboard/OOH', 'Email Marketing', 'KPI Reporting'],
+    highlights: [
+      '+35% inbound leads the quarter after launch',
+      '200+ prospects added to borrower network via 10+ networking events',
+      '12% average newsletter open rate, 6 closed deals tracked by link clicks',
+    ],
+    images: [
+      { src: '/images/case-studies/core-capital-billboard-rt79.jpg', alt: 'Core Capital Lending digital billboard on Route 79', caption: 'I-79 digital billboard, Canonsburg PA' },
+      { src: '/images/case-studies/core-capital-billboard-mcknight.jpg', alt: 'Core Capital Lending digital billboard on McKnight Road', caption: 'McKnight Road digital billboard' },
+      { src: '/images/case-studies/core-capital-dscr-flyer.jpg', alt: 'Core Capital Lending DSCR rental loan digital flyer' },
+      { src: '/images/case-studies/core-capital-budget-performance.jpg', alt: 'Core Capital Lending budget and digital performance report', caption: 'Monthly budget & digital performance reporting' },
+      { src: '/images/case-studies/core-capital-promo-billboard.jpg', alt: 'Core Capital Lending promo materials and billboard media plan', caption: 'Promo materials & billboard media plan' },
+      { src: '/images/case-studies/core-capital-fix-and-flips.jpg', alt: 'Presenting a Fix and Flips loan program to the team' },
+    ],
   },
   {
-    name: 'Cinect',
+    name: 'Office Depot / Supra Office Solutions',
+    category: 'Marketing Experience',
+    role: 'Business Solutions Sales & Operations Intern',
     description:
-      'Created a Google Cloud-based app using ML to aggregate Letterboxd data for group movie recommendations.',
-    tech: ['GCP', 'Python', 'ML', 'BigQuery'],
+      'Supported B2B account teams on event logistics and sustainability initiatives, from a multi-campus "Sustainability Show" tour to onboarding clients onto the Keurig K-Cycle recycling program.',
+    tags: ['Event Planning', 'Client Onboarding', 'Budget Analysis'],
+    highlights: [
+      'Sustainability Show tour across 3 university locations',
+      'Zero-waste catering plan for a 60-attendee event',
+    ],
   },
   {
-    name: 'FlightAdvisor',
+    name: 'Susquehanna Music Festival',
+    category: 'Music Festival Experiences',
+    role: 'Founder',
     description:
-      'Designed a full-stack flight cancellation and pricing prediction app using linear regression.',
-    tech: ['Python', 'Flask', 'Tailwind', 'Docker'],
-    githubUrl: 'https://github.com/awitkowski0/FlightPredictions',
+      'Created and ran a full-day music festival from scratch in Clearfield, PA — booking bands, securing sponsors, and coordinating logistics for 250+ attendees while raising money for a local charity.',
+    tags: ['Event Production', 'Sponsorship', 'Fundraising'],
+    highlights: [
+      '5 local bands, 9 hours of entertainment, 250+ attendees',
+      '$3,000+ raised for a local charity',
+    ],
+    images: [
+      { src: '/images/case-studies/susquehanna-band-performance.jpg', alt: 'Social Parasite performing at the Susquehanna Music Festival' },
+      { src: '/images/case-studies/susquehanna-crew-shirts.jpg', alt: 'Susquehanna Music Festival organizing crew' },
+    ],
+    video: {
+      src: '/videos/susquehanna-music-festival-promo.mp4',
+      label: 'Festival promo video',
+    },
+    links: [
+      { label: 'The Progress News Feature', url: 'https://www.theprogressnews.com/news/local-college-student-organizes-music-festival-on-the-riverwalk-in-clearfield/article_7f0b5584-4515-11ef-93fd-7f04d6941819.html' },
+    ],
   },
   {
-    name: 'Idea-Pad',
+    name: 'All Out Music Festival | PromoWest Productions / Stage AE',
+    category: 'Music Festival Experiences',
+    role: 'Assistant, Artist Relations, Logistics & Marketing',
     description:
-      'AI-powered research and project planning desktop app built with Tauri v2, React, and Gemini AI for rapid ideation and prototyping.',
-    tech: ['TypeScript', 'Tauri', 'React', 'Gemini'],
-    githubUrl: 'https://github.com/awitkowski0/Idea-Pad',
-  },
-  {
-    name: 'pickles',
-    description:
-      'Pittsburgh pickleball court availability tool — a public utility app serving the local community with real-time court data.',
-    tech: ['Next.js', 'Bun', 'Tailwind', 'Vercel'],
-    liveUrl: 'https://pickles-iota.vercel.app',
-    githubUrl: 'https://github.com/awitkowski0/pickles',
+      'Supported artist relations and marketing for a large-scale music festival at Stage AE — serving as a liaison for headline talent while driving a data-backed Instagram content strategy.',
+    tags: ['Artist Relations', 'Social Media Strategy', 'B2B Outreach', 'Data Analysis'],
+    highlights: [
+      '1.5M organic Instagram impressions',
+      'Performance analysis across 130+ productions',
+      '15+ local business partnerships',
+    ],
+    images: [
+      { src: '/images/case-studies/all-out-music-festival-crew.jpg', alt: 'All Out Music Festival crew' },
+    ],
   },
 ]

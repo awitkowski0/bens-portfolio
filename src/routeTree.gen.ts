@@ -10,63 +10,33 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ApplyIndexRouteImport } from './routes/apply/index'
-import { Route as ApplyPhilliesRouteImport } from './routes/apply/phillies'
-import { Route as ApplyCompanyRouteImport } from './routes/apply/$company'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApplyIndexRoute = ApplyIndexRouteImport.update({
-  id: '/apply/',
-  path: '/apply/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApplyPhilliesRoute = ApplyPhilliesRouteImport.update({
-  id: '/apply/phillies',
-  path: '/apply/phillies',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApplyCompanyRoute = ApplyCompanyRouteImport.update({
-  id: '/apply/$company',
-  path: '/apply/$company',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/apply/$company': typeof ApplyCompanyRoute
-  '/apply/phillies': typeof ApplyPhilliesRoute
-  '/apply/': typeof ApplyIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/apply/$company': typeof ApplyCompanyRoute
-  '/apply/phillies': typeof ApplyPhilliesRoute
-  '/apply': typeof ApplyIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/apply/$company': typeof ApplyCompanyRoute
-  '/apply/phillies': typeof ApplyPhilliesRoute
-  '/apply/': typeof ApplyIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/apply/$company' | '/apply/phillies' | '/apply/'
+  fullPaths: '/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/apply/$company' | '/apply/phillies' | '/apply'
-  id: '__root__' | '/' | '/apply/$company' | '/apply/phillies' | '/apply/'
+  to: '/'
+  id: '__root__' | '/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ApplyCompanyRoute: typeof ApplyCompanyRoute
-  ApplyPhilliesRoute: typeof ApplyPhilliesRoute
-  ApplyIndexRoute: typeof ApplyIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -78,35 +48,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/apply/': {
-      id: '/apply/'
-      path: '/apply'
-      fullPath: '/apply/'
-      preLoaderRoute: typeof ApplyIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/apply/phillies': {
-      id: '/apply/phillies'
-      path: '/apply/phillies'
-      fullPath: '/apply/phillies'
-      preLoaderRoute: typeof ApplyPhilliesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/apply/$company': {
-      id: '/apply/$company'
-      path: '/apply/$company'
-      fullPath: '/apply/$company'
-      preLoaderRoute: typeof ApplyCompanyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ApplyCompanyRoute: ApplyCompanyRoute,
-  ApplyPhilliesRoute: ApplyPhilliesRoute,
-  ApplyIndexRoute: ApplyIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

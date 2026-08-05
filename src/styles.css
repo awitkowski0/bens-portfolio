@@ -7,16 +7,31 @@
 }
 
 :root {
-  --palette-primary: #1A60D0;
-  --palette-secondary: #0A40A0;
-  --palette-accent: #5090E8;
-  --palette-surface: #ECF2FD;
-  --palette-text: #08102A;
-  --palette-text-muted: #385080;
-  --palette-background: #F4F7FE;
+  --palette-primary: #E8720C;
+  --palette-secondary: #B8560A;
+  --palette-accent: #F5A356;
+  --palette-surface: #FDF1E6;
+  --palette-text: #241004;
+  --palette-text-muted: #7A5230;
+  --palette-background: #FFFBF7;
   --palette-card: #FFFFFF;
-  --palette-border: rgba(26, 96, 208, 0.2);
-  --palette-glow: rgba(26, 96, 208, 0.15);
+  --palette-border: rgba(232, 114, 12, 0.2);
+  --palette-glow: rgba(232, 114, 12, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --palette-primary: #FF8C3D;
+    --palette-secondary: #FF6D00;
+    --palette-accent: #FFB380;
+    --palette-surface: #1A0F08;
+    --palette-text: #FFE8D0;
+    --palette-text-muted: #C09068;
+    --palette-background: #0A0503;
+    --palette-card: #160D07;
+    --palette-border: rgba(255, 140, 61, 0.28);
+    --palette-glow: rgba(255, 140, 61, 0.18);
+  }
 }
 
 *, *::before, *::after {
@@ -62,4 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--palette-primary);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

@@ -1,28 +1,28 @@
-# Alex Witkowski
+# Benjamin Leighow
 
-Software engineer at Dick's Sporting Goods. M.S. Computer Science (AI) at Georgia Tech.
-
-Site: [alexwitkowski.com](https://alexwitkowski.com)
+Marketing student at the University of Pittsburgh's College of Business Administration. Founder & President of the Music & Entertainment Business Association (MEBA).
 
 ## Work
 
-- **Dick's Sporting Goods** -- Software Engineer (Jun 2025 - Present)
-- **Sheetz** -- Scrum Master / Software Engineering Intern (May 2023 - May 2025)
-- **B. Braun Medical** -- R&D Software Engineer Intern (May 2022 - Dec 2022)
-- **University of Pittsburgh** -- DevOps Engineer (Aug 2021 - Apr 2022)
+- **Office Depot / Supra Office Solutions** -- Business Solutions Sales & Operations Intern (Aug 2025 - Apr 2026)
+- **Core Capital Lending** -- Marketing Strategist (Mar 2025 - Aug 2025)
+- **Susquehanna Music Festival** -- Founder & Organizer (May 2024 - Jul 2024)
+- **MEBA, University of Pittsburgh** -- Founder & President (Aug 2023 - Apr 2026)
+- **Pitt Cheer** -- Cheerleader, Competitive Team Leader (Aug 2023 - Apr 2026)
+- **All Out Music Festival | PromoWest / Stage AE** -- Assistant, Artist Relations, Logistics & Marketing (Mar 2023 - Aug 2025)
+- **Eagle Scout (BSA), Troop 9** -- Senior Patrol Leader (Feb 2020 - Feb 2022)
 
 ## Education
 
-- **Georgia Tech** -- M.S. Computer Science, AI Concentration (2024-2026)
-- **University of Pittsburgh** -- B.S. Computer Science (2020-2024)
+- **University of Pittsburgh** -- B.S. Business Administration, Marketing (2022-2026)
 
-## Selected Projects
+## Case Studies
 
-- **Frody.co** -- Distributed real-time fraud detection with Kafka + BigQuery (PennApps 2024 winner)
-- **PLAY'r** -- LLM-powered content generation game
-- **pickles** -- Pittsburgh pickleball court availability tool
-- **FlightAdvisor** -- Flight cancellation and pricing prediction app
+- **MEBA** -- Founded and scaled a music/entertainment industry student organization from the ground up
+- **Core Capital Lending** -- Multi-channel marketing campaigns, digital billboards, investor newsletters
+- **Susquehanna Music Festival** -- Founded and ran a full-day festival, raised $3,000+ for charity
+- **All Out Music Festival | PromoWest / Stage AE** -- Artist relations and a 1.5M-impression Instagram strategy
 
-## Tech
+## Skills
 
-Python, TypeScript, React, .NET, PyTorch, Kafka, GCP, AWS, Docker, PostgreSQL
+Meta Ads Manager, Google Ads, LinkedIn Sales Navigator, HubSpot, Salesforce, Mailchimp, Alteryx, Tableau, Power BI, Adobe Suite

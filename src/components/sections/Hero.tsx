@@ -70,6 +70,18 @@ export function Hero() {
         style={{ opacity, y: contentY }}
         className="relative z-10 max-w-4xl"
       >
+        <motion.div variants={item} className="mb-6 flex justify-center">
+          <img
+            src={profile.heroImage}
+            alt={profile.name}
+            className="h-32 w-32 rounded-full object-cover sm:h-40 sm:w-40"
+            style={{
+              border: '4px solid var(--palette-card)',
+              boxShadow: '0 4px 24px var(--palette-glow), 0 0 0 2px var(--palette-primary)',
+            }}
+          />
+        </motion.div>
+
         <motion.p
           variants={item}
           className="mb-4 text-sm font-semibold uppercase tracking-[0.2em]"

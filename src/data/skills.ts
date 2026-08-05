@@ -5,44 +5,19 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    name: 'Languages',
-    skills: ['Python', 'Java', 'C#', 'TypeScript', 'JavaScript', 'SQL', 'C'],
+    name: 'Marketing & Advertising',
+    skills: ['Meta Ads Manager', 'Google Ads', 'LinkedIn Sales Navigator'],
   },
   {
-    name: 'AI / ML',
-    skills: [
-      'PyTorch',
-      'TensorFlow',
-      'Scikit-learn',
-      'Pandas',
-      'Large Language Models',
-      'Google Gemini API',
-      'RAG',
-    ],
+    name: 'CRM & Data Tools',
+    skills: ['HubSpot', 'Salesforce', 'Mailchimp', 'Alteryx', 'Tableau', 'Microsoft Power BI', 'Python'],
   },
   {
-    name: 'Systems & DevOps',
-    skills: [
-      'AWS',
-      'Google Cloud Platform',
-      'Docker',
-      'Kafka',
-      'PostgreSQL',
-      'CI/CD',
-      'Redis',
-    ],
+    name: 'Productivity & Design',
+    skills: ['Adobe Suite', 'Microsoft Office Suite'],
   },
   {
-    name: 'Frameworks & Tools',
-    skills: [
-      'React',
-      'React Native',
-      'Next.js',
-      '.NET',
-      'Flask',
-      'FastAPI',
-      'Flutter',
-      'Tauri',
-    ],
+    name: 'Event & Partnership Management',
+    skills: ['Sponsorship Acquisition', 'B2B Outreach', 'Budget & Logistics Planning', 'Artist & Vendor Relations'],
   },
 ]
