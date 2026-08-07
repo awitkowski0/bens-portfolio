@@ -5,19 +5,61 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    name: 'Marketing & Advertising',
-    skills: ['Meta Ads Manager', 'Google Ads', 'LinkedIn Sales Navigator'],
+    name: 'Marketing & Digital Media',
+    skills: [
+      'Meta Ads Manager',
+      'Google Ads',
+      'LinkedIn Sales Navigator',
+      'Search Engine Optimization (SEO)',
+      'Copywriting & Content Strategy',
+      'Out-Of-Home (OOH) Advertising',
+      'Email Marketing',
+    ],
   },
   {
-    name: 'CRM & Data Tools',
-    skills: ['HubSpot', 'Salesforce', 'Mailchimp', 'Alteryx', 'Tableau', 'Microsoft Power BI', 'Python'],
+    name: 'CRM & Data Analytics',
+    skills: [
+      'HubSpot (Platform Admin & Migration)',
+      'Salesforce',
+      'Mailchimp',
+      'Alteryx',
+      'Tableau',
+      'Microsoft Power BI',
+      'Python',
+      'Campaign Attribution & Funnel Tracking',
+      'A/B Testing',
+    ],
+  },
+  {
+    name: 'Event & Operations Management',
+    skills: [
+      'Artist & Vendor Relations',
+      'Sponsorship Acquisition',
+      'Talent Hospitality & Rider Execution',
+      'Stage & Site Logistics',
+      'B2B Outreach & Partnerships',
+      'Budget & Proposal Planning',
+      'Survey Design & Demographics Analysis',
+    ],
   },
   {
     name: 'Productivity & Design',
-    skills: ['Adobe Suite', 'Microsoft Office Suite'],
+    skills: [
+      'Adobe Creative Suite (Photoshop, Premiere Pro, InDesign, Illustrator)',
+      'Microsoft Office Suite (Advanced Excel & Powerpoint)',
+      'Google Workspace',
+      'Canva',
+      'Pitch Deck & Presentation Design',
+    ],
   },
   {
-    name: 'Event & Partnership Management',
-    skills: ['Sponsorship Acquisition', 'B2B Outreach', 'Budget & Logistics Planning', 'Artist & Vendor Relations'],
+    name: 'Leadership & Strategy',
+    skills: [
+      'Team Mentorship & Intern Supervision',
+      'Strategic Planning',
+      'Public Speaking & Presentation',
+      'Community Outreach',
+      'Cross-Functional Communication',
+    ],
   },
 ]

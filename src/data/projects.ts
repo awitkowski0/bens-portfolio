@@ -15,7 +15,12 @@ export interface ProjectLink {
   url: string
 }
 
-export type ProjectCategory = 'Music' | 'Marketing Experience' | 'Music Festival Experiences'
+export interface ProjectHighlight {
+  label: string
+  description: string
+}
+
+export type ProjectCategory = 'Music Industry' | 'Marketing Strategy' | 'Community & Student Leadership'
 
 export interface Project {
   name: string
@@ -23,48 +28,108 @@ export interface Project {
   role?: string
   description: string
   tags: string[]
-  highlights?: string[]
+  highlights?: ProjectHighlight[]
   images?: ProjectImage[]
   video?: ProjectVideo
   links?: ProjectLink[]
 }
 
-export const projectCategories: ProjectCategory[] = ['Music', 'Marketing Experience', 'Music Festival Experiences']
+export const projectCategories: ProjectCategory[] = ['Music Industry', 'Marketing Strategy', 'Community & Student Leadership']
 
 export const projects: Project[] = [
   {
-    name: 'MEBA — Music & Entertainment Business Association',
-    category: 'Music',
-    role: 'Founder',
+    name: 'Music Industry',
+    category: 'Music Industry',
     description:
-      'Founded and scaled a Pitt Business student organization from the ground up, bridging students with the music and entertainment industry through guest speakers, corporate partnerships, and benefit concerts — including a Farina Foundation benefit show with Post Genre.',
-    tags: ['Leadership', 'Business Development', 'Partnerships', 'Community Outreach'],
+      'Building live entertainment networks, managing talent, executing promotional campaigns, and analyzing fan data...',
+    tags: ['Talent Management', 'Artist Relations', 'Live Event Production', 'Data Analytics', 'Grassroots Marketing'],
     highlights: [
-      '9 general body meetings with guest speakers from Stage AE, Audacy, and Warner Records',
-      '134 Instagram followers, 65 GroupMe members, 84 email subscribers in first semester',
-      'Booked a Farina Foundation benefit concert with Post Genre',
+      {
+        label: 'Independent Artist Management',
+        description:
+          'Served as talent manager for electronic artist Garrett Alan, directing release strategies, press outreach, and custom pitch decks to secure festival bookings and build brand presence.',
+      },
+      {
+        label: '1.5M+ Organic Impressions',
+        description:
+          'Built and ran trend-focused Instagram campaigns and local influencer partnerships across Stage AE and festival media to boost ticket sales and awareness.',
+      },
+      {
+        label: 'Artist Hospitality & Logistics Lead',
+        description:
+          'Managed green room setups, ground transport, and day-of schedules for headlining talent at Stage AE, serving as the direct liaison between artists and venue leadership.',
+      },
+      {
+        label: 'Rider & Contract Execution',
+        description:
+          'Handled hospitality riders, credential distribution, and stage run-times across multi-stage festival setups to keep live show operations running strictly on schedule.',
+      },
+      {
+        label: 'Post-Show Analytics & Dashboards',
+        description:
+          'Built weekly performance recap decks for venue promoters using Excel and Power BI, evaluating ticket sales pacing, demographic trends, and bar spend across 130+ productions.',
+      },
+      {
+        label: 'Grassroots Street Team Leadership',
+        description:
+          'Directed campus street-team efforts for upcoming concert dates, coordinating flyer distribution, poster runs, and digital group chat announcements across Pitt.',
+      },
+      {
+        label: '500+ Attendees & $1,000+ Raised',
+        description:
+          'Produced multiple live benefit concerts through MEBA (scaling our community to over 60 active members) that brought in 500+ attendees and raised over $1,000 for local causes.',
+      },
     ],
     images: [
       { src: '/images/case-studies/meba-general-body-meeting.jpg', alt: 'MEBA general body meeting at Pitt Business', caption: 'A MEBA general body meeting' },
       { src: '/images/case-studies/audacy-studio-visit.jpg', alt: 'MEBA members visiting Audacy’s Pittsburgh studios', caption: 'MEBA members touring Audacy’s Pittsburgh studios' },
+      { src: '/images/case-studies/all-out-music-festival-crew.jpg', alt: 'All Out Music Festival crew' },
+      { src: '/images/case-studies/all-out-music-festival-crowd.jpg', alt: 'Performer on stage at All Out Music Festival with the crowd and Pittsburgh’s Iron City sign in the background' },
+      { src: '/images/case-studies/all-out-music-festival-group.jpg', alt: 'Attendees at All Out Music Festival' },
     ],
     links: [
+      { label: 'MEBA Instagram', url: 'https://www.instagram.com/meba.pitt/' },
       { label: 'Pitt News Feature', url: 'https://pittnews.com/article/186193/featured/passion-meets-profession-club-helps-students-start-music-entertainment-business-careers/' },
-      { label: 'MEBA on Instagram', url: 'https://www.instagram.com/meba.pitt/' },
       { label: 'Farina Foundation Benefit Concert', url: 'https://farinafoundation.org/event/mebe-presents-play-it-forward-a-farina-foundation-benefit-concert/' },
     ],
   },
   {
-    name: 'Core Capital Lending',
-    category: 'Marketing Experience',
-    role: 'Marketing Strategist',
+    name: 'Marketing Strategy',
+    category: 'Marketing Strategy',
     description:
-      'Owned multi-channel marketing for a Pittsburgh-based real estate lender — from digital ad campaigns and investor newsletters to a highway digital billboard on I-79 — driving inbound leads and expanding the borrower network.',
-    tags: ['Meta Ads', 'Google Ads', 'Billboard/OOH', 'Email Marketing', 'KPI Reporting'],
+      'Executing omni-channel acquisition, CRM systems migration, and team-wide strategy implementation...',
+    tags: ['HubSpot CRM Migration', 'Meta & Google Ads', 'Billboard / OOH', 'Marketing Budgeting', 'Team Execution'],
     highlights: [
-      '+35% inbound leads the quarter after launch',
-      '200+ prospects added to borrower network via 10+ networking events',
-      '12% average newsletter open rate, 6 closed deals tracked by link clicks',
+      {
+        label: '+35% Inbound Lead Jump',
+        description:
+          'Designed, launched, and continuously optimized paid digital campaigns across ad platforms that jumped inbound leads by 35% in the following quarter.',
+      },
+      {
+        label: 'Full HubSpot CRM Migration',
+        description:
+          "Took charge of migrating the company's entire legacy database over to HubSpot, setting up new pipelines and serving as the primary administrator for the platform.",
+      },
+      {
+        label: 'I-79 Highway Billboard Campaign',
+        description:
+          'Managed the creative direction, media buying, and rollout for a high-visibility digital billboard along I-79, significantly driving regional brand presence and inbound borrower calls.',
+      },
+      {
+        label: 'Conversion-Focused Newsletter Strategy',
+        description:
+          'Authored monthly investor newsletters maintaining a 12% average open rate, utilizing custom UTM tracking links that directly initiated closed real estate financing deals.',
+      },
+      {
+        label: 'Marketing Intern Leadership',
+        description:
+          'Directly supervised and mentored a marketing intern, delegating daily content creation, promotional materials, and campaign performance tracking.',
+      },
+      {
+        label: 'Executive Planning & Team Integration',
+        description:
+          'Created monthly marketing plans, performance reporting dashboards, and ad budgets, working directly with a team of loan officers to keep initiatives aligned.',
+      },
     ],
     images: [
       { src: '/images/case-studies/core-capital-billboard-rt79.jpg', alt: 'Core Capital Lending digital billboard on Route 79', caption: 'I-79 digital billboard, Canonsburg PA' },
@@ -76,27 +141,32 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: 'Office Depot / Supra Office Solutions',
-    category: 'Marketing Experience',
-    role: 'Business Solutions Sales & Operations Intern',
+    name: 'Community & Student Leadership',
+    category: 'Community & Student Leadership',
     description:
-      'Supported B2B account teams on event logistics and sustainability initiatives, from a multi-campus "Sustainability Show" tour to onboarding clients onto the Keurig K-Cycle recycling program.',
-    tags: ['Event Planning', 'Client Onboarding', 'Budget Analysis'],
+      'Mobilizing local communities, mentoring future students, and representing university athletics...',
+    tags: ['Community Events', 'Student Mentorship', 'NCA Cheer Leader', 'Public Speaking'],
     highlights: [
-      'Sustainability Show tour across 3 university locations',
-      'Zero-waste catering plan for a 60-attendee event',
-    ],
-  },
-  {
-    name: 'Susquehanna Music Festival',
-    category: 'Music Festival Experiences',
-    role: 'Founder',
-    description:
-      'Created and ran a full-day music festival from scratch in Clearfield, PA — booking bands, securing sponsors, and coordinating logistics for 250+ attendees while raising money for a local charity.',
-    tags: ['Event Production', 'Sponsorship', 'Fundraising'],
-    highlights: [
-      '5 local bands, 9 hours of entertainment, 250+ attendees',
-      '$3,000+ raised for a local charity',
+      {
+        label: 'Free Community Charity Festival',
+        description:
+          'Founded Susquehanna Music Festival as a completely free event, providing paid performance opportunities for local musicians while raising $3,000+ for charity.',
+      },
+      {
+        label: 'NCA Competitive Cheer Leader',
+        description:
+          'Competed twice at NCA College Nationals as Squad Logistics Lead, while dedicating 30+ hours to public service and community outreach at university events.',
+      },
+      {
+        label: 'Pitt Business Student Ambassador',
+        description:
+          'Hosted seminars, panel discussions, and Q&A sessions for over 1,000 prospective students and families, serving as a mentor throughout the university admissions process.',
+      },
+      {
+        label: 'Eagle Scout Service Project',
+        description:
+          'Earned the rank of Eagle Scout by planning and fundraising $800+ for a community flag drop-box, donating all surplus funds directly to American Legion Post #134.',
+      },
     ],
     images: [
       { src: '/images/case-studies/susquehanna-band-performance.jpg', alt: 'Social Parasite performing at the Susquehanna Music Festival' },
@@ -108,22 +178,6 @@ export const projects: Project[] = [
     },
     links: [
       { label: 'The Progress News Feature', url: 'https://www.theprogressnews.com/news/local-college-student-organizes-music-festival-on-the-riverwalk-in-clearfield/article_7f0b5584-4515-11ef-93fd-7f04d6941819.html' },
-    ],
-  },
-  {
-    name: 'All Out Music Festival | PromoWest Productions / Stage AE',
-    category: 'Music Festival Experiences',
-    role: 'Assistant, Artist Relations, Logistics & Marketing',
-    description:
-      'Supported artist relations and marketing for a large-scale music festival at Stage AE — serving as a liaison for headline talent while driving a data-backed Instagram content strategy.',
-    tags: ['Artist Relations', 'Social Media Strategy', 'B2B Outreach', 'Data Analysis'],
-    highlights: [
-      '1.5M organic Instagram impressions',
-      'Performance analysis across 130+ productions',
-      '15+ local business partnerships',
-    ],
-    images: [
-      { src: '/images/case-studies/all-out-music-festival-crew.jpg', alt: 'All Out Music Festival crew' },
     ],
   },
 ]

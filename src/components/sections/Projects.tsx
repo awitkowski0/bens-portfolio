@@ -82,14 +82,21 @@ function ProjectPage({ project, index }: { project: (typeof projects)[number]; i
           >
             {project.highlights.map((h) => (
               <li
-                key={h}
-                className="flex items-center gap-2 text-sm font-semibold"
-                style={{ color: 'var(--palette-primary)' }}
+                key={h.label}
+                className="flex items-start gap-2 text-sm"
+                style={{ color: 'var(--palette-text-muted)' }}
               >
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-                {h}
+                <span style={{ color: 'var(--palette-primary)' }} className="mt-0.5 shrink-0">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                </span>
+                <span>
+                  <span className="font-semibold" style={{ color: 'var(--palette-primary)' }}>
+                    {h.label}:
+                  </span>{' '}
+                  {h.description}
+                </span>
               </li>
             ))}
           </motion.ul>

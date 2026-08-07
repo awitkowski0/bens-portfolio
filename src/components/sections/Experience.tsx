@@ -89,6 +89,15 @@ export function Experience() {
                 {exp.startDate} — {exp.endDate} | {exp.location}
               </p>
 
+              {exp.intro && (
+                <p
+                  className="mb-4 text-sm leading-relaxed"
+                  style={{ color: 'var(--palette-text-muted)' }}
+                >
+                  {exp.intro}
+                </p>
+              )}
+
               <ul className="space-y-2">
                 {exp.bullets.map((bullet) => (
                   <li

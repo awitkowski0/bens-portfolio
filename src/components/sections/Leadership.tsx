@@ -89,22 +89,33 @@ export function Leadership() {
                 {role.startDate} — {role.endDate} | {role.location}
               </p>
 
-              <ul className="space-y-2">
-                {role.bullets.map((bullet) => (
-                  <li
-                    key={bullet}
-                    className="flex gap-2 text-sm leading-relaxed"
-                    style={{ color: 'var(--palette-text-muted)' }}
-                  >
-                    <span style={{ color: 'var(--palette-primary)' }} className="mt-1.5 shrink-0">
-                      <svg width="6" height="6" viewBox="0 0 6 6" fill="currentColor">
-                        <circle cx="3" cy="3" r="3" />
-                      </svg>
-                    </span>
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
+              {role.intro && (
+                <p
+                  className="mb-4 text-sm leading-relaxed"
+                  style={{ color: 'var(--palette-text-muted)' }}
+                >
+                  {role.intro}
+                </p>
+              )}
+
+              {role.bullets.length > 0 && (
+                <ul className="space-y-2">
+                  {role.bullets.map((bullet) => (
+                    <li
+                      key={bullet}
+                      className="flex gap-2 text-sm leading-relaxed"
+                      style={{ color: 'var(--palette-text-muted)' }}
+                    >
+                      <span style={{ color: 'var(--palette-primary)' }} className="mt-1.5 shrink-0">
+                        <svg width="6" height="6" viewBox="0 0 6 6" fill="currentColor">
+                          <circle cx="3" cy="3" r="3" />
+                        </svg>
+                      </span>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </motion.div>
           ))}
         </div>
