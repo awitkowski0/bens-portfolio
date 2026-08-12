@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Ben Leighow',
   title: 'Marketing Strategist',
-  subtitle: 'B.S.B.A - Marketing, Digital Media, Public & Professional Writing | Founder, MEBA & Susquehanna Music Festival | Marketing Strategy Implementation',
+  subtitle: 'B.S.B.A. - Marketing, Digital Media, Public & Professional Writing | Music Business & Live Entertainment | Marketing Strategy & Operations',
   tagline: 'Building audiences, crafting campaigns, and hosting events people show up for.',
   email: 'bml74@pitt.edu',
   phone: '570-316-7778',
