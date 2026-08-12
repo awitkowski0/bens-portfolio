@@ -47,7 +47,7 @@ export const projects: Project[] = [
       {
         label: 'Independent Artist Management',
         description:
-          'Served as talent manager for electronic artist Garrett Alan, directing release strategies, press outreach, and custom pitch decks to secure festival bookings and build brand presence.',
+          'Manage Red Bull DJ winner Garrett Alan and indie creator Film for Her, directing release strategies, press outreach, merch, socials, and custom pitch decks and EPKs to secure regional bookings and build brand presence.',
       },
       {
         label: '1.5M+ Organic Impressions',

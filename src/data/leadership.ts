@@ -2,6 +2,31 @@ import type { Experience } from '#/data/experience'
 
 export const leadership: Experience[] = [
   {
+    company: 'Independent Artists & Labels',
+    location: 'Pittsburgh, PA',
+    role: 'Freelance PR & Copywriting',
+    startDate: 'January 2024',
+    endDate: 'Present',
+    intro:
+      'Writing is the part of this industry I keep coming back to. On the side of everything else, I take on freelance PR and copy work for artists who need their story told well — from scrappy independent acts all the way to a Grammy-winning artist!',
+    bullets: [
+      'Authored tailored PR copy, press releases, and EPK materials for independent musical acts and a Grammy-winning artist.',
+    ],
+  },
+  {
+    company: 'Garrett Alan | Film for Her',
+    location: 'Pittsburgh, PA',
+    role: 'Artist Management',
+    startDate: 'January 2024',
+    endDate: 'Present',
+    intro:
+      'Managing artists is where all of it comes together — the marketing, the writing, the logistics, and the relationships. I work directly with two acts to build their brand, get their music out into the world, and land the bookings that actually move them forward!',
+    bullets: [
+      'Managed Red Bull DJ winner Garrett Alan with press, outreach, pitch decks, and a full EPK to secure bookings.',
+      'Managed indie creator Film for Her, overseeing music releases, merch design and fulfillment, socials, and regional bookings.',
+    ],
+  },
+  {
     company: 'Pitt Cheer, University of Pittsburgh',
     location: 'Pittsburgh, PA',
     role: 'Cheerleader — Competitive Team Leader',
@@ -9,7 +34,10 @@ export const leadership: Experience[] = [
     endDate: 'April 2026',
     intro:
       'Being on the Pitt Cheer team was easily one of the most rewarding parts of my college experience! Stepping out in front of thousands of fans at Division I games pushed me to grow as a leader, while managing a 20+ hour weekly training commitment built serious discipline... Plus, it gave me the chance to travel, represent the university, and meet my absolute best friends and greatest mentors!',
-    bullets: [],
+    bullets: [
+      'Managed the rigorous performance, travel, and practice schedule required of a Division I athletic program.',
+      'Served as a mentor group leader for first-year teammates and organized supplemental practice sessions.',
+    ],
   },
   {
     company: 'Pitt Business, University of Pittsburgh',
