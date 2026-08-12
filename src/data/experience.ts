@@ -76,4 +76,15 @@ export const experience: Experience[] = [
       'Authored tailored PR copy, press releases, and EPK materials for independent musical acts and a Grammy-winning artist.',
     ],
   },
+  {
+    company: 'Garrett Alan | Film for Her',
+    location: 'Pittsburgh, PA',
+    role: 'Artist Management',
+    intro:
+      'Managing Garrett Alan and Film for Her teaches me something new every single day, and I love the genuine friendships I have grown with local venue staff and the artists themselves. Guiding music rollouts, merch design, and pitch decks for people whose art I truly believe in is easily one of the most rewarding things I do.',
+    bullets: [
+      'Managed Red Bull DJ winner Garrett Alan with press, outreach, pitch decks, and a full EPK to secure bookings.',
+      'Managed indie creator Film for Her, overseeing music releases, merch design and fulfillment, socials, and regional bookings.',
+    ],
+  },
 ]
