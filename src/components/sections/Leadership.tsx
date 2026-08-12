@@ -22,7 +22,7 @@ export function Leadership() {
           className="mb-16 text-4xl font-black sm:text-5xl lg:text-6xl"
           style={{ color: 'var(--palette-text)' }}
         >
-          {'Leadership & Activities'.split('').map((char, i) => (
+          {'Involvement & Leadership'.split('').map((char, i) => (
             <motion.span
               key={i}
               className="inline-block"
@@ -86,7 +86,9 @@ export function Leadership() {
                 className="mt-1 mb-3 text-sm"
                 style={{ color: 'var(--palette-text-muted)' }}
               >
-                {role.startDate} — {role.endDate} | {role.location}
+                {role.startDate && role.endDate
+                  ? `${role.startDate} — ${role.endDate} | ${role.location}`
+                  : role.location}
               </p>
 
               {role.intro && (

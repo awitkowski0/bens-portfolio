@@ -2,59 +2,62 @@ import type { Experience } from '#/data/experience'
 
 export const leadership: Experience[] = [
   {
-    company: 'Independent Artists & Labels',
-    location: 'Pittsburgh, PA',
-    role: 'Freelance PR & Copywriting',
-    startDate: 'January 2024',
-    endDate: 'Present',
+    company: 'Susquehanna Music Festival',
+    location: 'Clearfield, PA',
+    role: 'Susquehanna Music Festival Organizer',
     intro:
-      'Writing is the part of this industry I keep coming back to. On the side of everything else, I take on freelance PR and copy work for artists who need their story told well — from scrappy independent acts all the way to a Grammy-winning artist!',
+      'I believe so deeply in live music as an avenue to bring communities together. Bringing a free benefit festival to my hometown from scratch was a pure labor of love, and seeing over 250 neighbors gather to enjoy local artists while raising $3,000+ for charity proved to me just how powerful live entertainment can be.',
     bullets: [
-      'Authored tailored PR copy, press releases, and EPK materials for independent musical acts and a Grammy-winning artist.',
+      'Produced a full day of live music featuring 5 local acts and hosting 250+ attendees, all while raising $3,000+ for charity.',
+      'Negotiated vendor contracts, sponsor partnerships, and on-site logistics to fund and execute show-day operations.',
     ],
   },
   {
     company: 'Garrett Alan | Film for Her',
     location: 'Pittsburgh, PA',
     role: 'Artist Management',
-    startDate: 'January 2024',
-    endDate: 'Present',
     intro:
-      'Managing artists is where all of it comes together — the marketing, the writing, the logistics, and the relationships. I work directly with two acts to build their brand, get their music out into the world, and land the bookings that actually move them forward!',
+      'Managing Garrett Alan and Film for Her teaches me something new every single day, and I love the genuine friendships I have grown with local venue staff and the artists themselves. Guiding music rollouts, merch design, and pitch decks for people whose art I truly believe in is easily one of the most rewarding things I do.',
     bullets: [
       'Managed Red Bull DJ winner Garrett Alan with press, outreach, pitch decks, and a full EPK to secure bookings.',
       'Managed indie creator Film for Her, overseeing music releases, merch design and fulfillment, socials, and regional bookings.',
     ],
   },
   {
+    company: 'Music & Entertainment Business Association (MEBA)',
+    location: 'Pittsburgh, PA',
+    role: 'President & Founder',
+    intro:
+      'I poured my whole heart into founding MEBA because I wanted to build a real community for students who live and breathe music the way I do. Using live events to connect people, support local charities, and bridge students directly to industry professionals from CAA to Live Nation was one of the greatest highlights of my entire college experience.',
+    bullets: [
+      'Established the organization from the ground up to foster industry education, career connections, and local philanthropy.',
+      'Partnered with regional music charities and service organizations to coordinate community benefit events.',
+      'Booked industry guest speakers and talent from CAA, Live Nation, Roc Nation, and indie rock band Flipturn.',
+    ],
+  },
+  {
     company: 'Pitt Cheer, University of Pittsburgh',
     location: 'Pittsburgh, PA',
-    role: 'Cheerleader — Competitive Team Leader',
-    startDate: 'August 2023',
-    endDate: 'April 2026',
+    role: 'Division I Competitive Cheerleader',
     intro:
-      'Being on the Pitt Cheer team was easily one of the most rewarding parts of my college experience! Stepping out in front of thousands of fans at Division I games pushed me to grow as a leader, while managing a 20+ hour weekly training commitment built serious discipline... Plus, it gave me the chance to travel, represent the university, and meet my absolute best friends and greatest mentors!',
+      'Stepping out in front of thousands of fans at Division I games was unforgettable, but what I treasure most are the lifelong friendships I built with my teammates and supervisors. Navigating a 20+ hour weekly commitment pushed us all to grow together, and leading my team on the national stage built bond and discipline that will stay with me forever.',
     bullets: [
       'Managed the rigorous performance, travel, and practice schedule required of a Division I athletic program.',
       'Served as a mentor group leader for first-year teammates and organized supplemental practice sessions.',
     ],
   },
   {
-    company: 'Pitt Business, University of Pittsburgh',
+    company: 'Pitt Business Admissions, University of Pittsburgh',
     location: 'Pittsburgh, PA',
     role: 'Student Ambassador & Prospective Student Mentor',
-    startDate: 'August 2023',
-    endDate: 'April 2026',
     intro:
-      'I absolutely loved having the opportunity to connect with prospective students and families on a regular basis! Serving in this role for three years gave me a deep, hands-on understanding of how university admissions offices operate behind the scenes... Plus, the faculty and staff at Pitt Business Admissions became some of my favorite people on campus!',
+      'I loved feeling the raw excitement of incoming freshmen and their families as they got ready for college... Helping guide prospective students through that huge transition while fostering amazing friendships with my admissions supervisors made every campus tour a joy.',
     bullets: [],
   },
   {
     company: 'PPW Program, University of Pittsburgh',
     location: 'Pittsburgh, PA',
     role: 'Public & Professional Writing Scholar',
-    startDate: 'August 2023',
-    endDate: 'April 2026',
     intro:
       'Writing has always been a genuine passion of mine, and the PPW certificate program gave me the perfect outlet to sharpen that craft... Focused on taking complex ideas and turning them into clear, compelling messaging across digital campaigns, strategic proposals, and professional copy!',
     bullets: [],
@@ -63,8 +66,6 @@ export const leadership: Experience[] = [
     company: 'Pitt Business Career Development Center',
     location: 'Pittsburgh, PA',
     role: 'Career & Internship Program Scholar',
-    startDate: 'August 2022',
-    endDate: 'April 2026',
     intro:
       'Working so closely alongside my peers and my academic advisor was one of the highlights of my time at Pitt... My academic advisor made such a massive impact on my college journey, guiding me through career milestones and helping me turn my passion for marketing and live entertainment into real professional opportunities!',
     bullets: [],
@@ -73,10 +74,8 @@ export const leadership: Experience[] = [
     company: 'Boy Scouts of America, Troop 9',
     location: 'Pittsburgh, PA',
     role: 'Eagle Scout',
-    startDate: 'February 2020',
-    endDate: 'February 2022',
     intro:
-      'Boy Scouts was a huge part of my life growing up, and I am so proud to have earned the rank of Eagle Scout; It taught me early lessons in leadership and community service through my project fundraising $800+ for a flag drop box and supporting our local American Legion!',
+      'Earning my rank as an Eagle Scout instilled a lifelong passion for community service and leadership in me. Leading my troop to raise over $800 for a local American Legion flag drop box taught me early on how meaningful it is to rally people around a shared community project.',
     bullets: [],
   },
 ]

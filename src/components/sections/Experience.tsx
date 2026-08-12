@@ -86,7 +86,9 @@ export function Experience() {
                 className="mt-1 mb-3 text-sm"
                 style={{ color: 'var(--palette-text-muted)' }}
               >
-                {exp.startDate} — {exp.endDate} | {exp.location}
+                {exp.startDate && exp.endDate
+                  ? `${exp.startDate} — ${exp.endDate} | ${exp.location}`
+                  : exp.location}
               </p>
 
               {exp.intro && (
